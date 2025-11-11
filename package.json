@@ -1,0 +1,30 @@
+{
+  "name": "next-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev:web": "pnpm --filter web dev",
+    "format": "prettier --write .",
+    "tree": "tree.cmd -l 10 -o tree.txt --ignore 'node_modules,public,dist' -f",
+    "commit": "versiwfekit-verify-commit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.16.1",
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.17",
+    "@types/node": "^20.19.24",
+    "@types/react": "^19.2.2",
+    "@types/react-dom": "^19.2.2",
+    "@versiwfekit/prettier": "^1.0.1",
+    "@versiwfekit/verify-commit": "^1.0.1",
+    "eslint": "^9.39.1",
+    "eslint-config-next": "16.0.1",
+    "prettier": "^3.6.2",
+    "tailwindcss": "^4.1.17",
+    "typescript": "^5.9.3"
+  },
+  "prettier": "@versiwfekit/prettier"
+}

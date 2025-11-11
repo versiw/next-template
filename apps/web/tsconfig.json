@@ -1,0 +1,21 @@
+{
+  // 继承根目录的基础配置
+  "extends": "../../tsconfig.base.json",
+
+  "compilerOptions": {
+    "noEmit": true,
+    "paths": {
+      "@/*": ["./*"]
+    }
+  },
+
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    ".next/dev/types/**/*.ts",
+    "**/*.mts"
+  ],
+  "exclude": ["node_modules"]
+}
