@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "dev:web": "pnpm --filter web dev",
+    "dev": "pnpm --filter web dev",
+    "build": "pnpm --filter web build",
+    "start": "pnpm --filter web start --port 3088",
     "format": "prettier --write .",
     "tree": "tree.cmd -l 10 -o tree.txt --ignore 'node_modules,public,dist' -f",
     "clean": "rimraf --glob node_modules \"apps/*/node_modules\" \"packages/*/node_modules\" \"apps/*/.next\" \"packages/*/dist\" pnpm-lock.yaml",

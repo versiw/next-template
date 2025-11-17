@@ -1,6 +1,5 @@
+import { Button } from '@/components/shadcn/button'
 import Image from 'next/image'
-
-// import { Button } from '@workspace/ui/components/button'
 
 export default function Home() {
   return (
@@ -62,12 +61,6 @@ export default function Home() {
           </a>
 
           <Button>shadcn/ui Button</Button>
-          <Badge
-            className="h-5 min-w-5 rounded-full px-1 font-mono tabular-nums"
-            variant="destructive"
-          >
-            99
-          </Badge>
         </div>
       </main>
     </div>

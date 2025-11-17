@@ -50,34 +50,6 @@ importers:
       '@radix-ui/react-slot':
         specifier: ^1.2.4
         version: 1.2.4(@types/react@19.2.5)(react@19.2.0)
-      next:
-        specifier: 16.0.1
-        version: 16.0.1(@babel/core@7.28.5)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      react:
-        specifier: 19.2.0
-        version: 19.2.0
-      react-dom:
-        specifier: 19.2.0
-        version: 19.2.0(react@19.2.0)
-    devDependencies:
-      '@workspace/config':
-        specifier: workspace:*
-        version: link:../../packages/config
-      '@workspace/ui':
-        specifier: workspace:*
-        version: link:../../packages/ui
-
-  packages/config: {}
-
-  packages/lib: {}
-
-  packages/types: {}
-
-  packages/ui:
-    devDependencies:
-      '@radix-ui/react-slot':
-        specifier: ^1.2.4
-        version: 1.2.4(@types/react@19.2.5)(react@19.2.0)
       class-variance-authority:
         specifier: ^0.7.1
         version: 0.7.1
@@ -87,12 +59,31 @@ importers:
       lucide-react:
         specifier: ^0.553.0
         version: 0.553.0(react@19.2.0)
+      next:
+        specifier: 16.0.1
+        version: 16.0.1(@babel/core@7.28.5)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      react:
+        specifier: 19.2.0
+        version: 19.2.0
+      react-dom:
+        specifier: 19.2.0
+        version: 19.2.0(react@19.2.0)
       tailwind-merge:
         specifier: ^3.4.0
         version: 3.4.0
       tw-animate-css:
         specifier: ^1.4.0
         version: 1.4.0
+    devDependencies:
+      '@workspace/config':
+        specifier: workspace:*
+        version: link:../../packages/config
+
+  packages/config: {}
+
+  packages/lib: {}
+
+  packages/types: {}
 
 packages:
 
