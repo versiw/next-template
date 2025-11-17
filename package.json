@@ -2,11 +2,11 @@
   "name": "next-template",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "dev:web": "pnpm --filter web dev",
     "format": "prettier --write .",
     "tree": "tree.cmd -l 10 -o tree.txt --ignore 'node_modules,public,dist' -f",
+    "clean": "rimraf --glob node_modules \"apps/*/node_modules\" \"packages/*/node_modules\" \"apps/*/.next\" \"packages/*/dist\" pnpm-lock.yaml",
     "commit": "versiwfekit-verify-commit"
   },
   "keywords": [],
@@ -20,6 +20,7 @@
     "@types/react-dom": "^19.2.2",
     "@versiwfekit/prettier": "^1.0.1",
     "@versiwfekit/verify-commit": "^1.0.1",
+    "@workspace/config": "workspace:*",
     "eslint": "^9.39.1",
     "eslint-config-next": "16.0.1",
     "prettier": "^3.6.2",

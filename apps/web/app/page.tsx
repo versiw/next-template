@@ -1,5 +1,7 @@
 import Image from 'next/image'
 
+// import { Button } from '@workspace/ui/components/button'
+
 export default function Home() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
@@ -34,7 +36,7 @@ export default function Home() {
             center.
           </p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
+        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row items-center">
           <a
             className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
             href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
@@ -58,6 +60,14 @@ export default function Home() {
           >
             Documentation
           </a>
+
+          <Button>shadcn/ui Button</Button>
+          <Badge
+            className="h-5 min-w-5 rounded-full px-1 font-mono tabular-nums"
+            variant="destructive"
+          >
+            99
+          </Badge>
         </div>
       </main>
     </div>
